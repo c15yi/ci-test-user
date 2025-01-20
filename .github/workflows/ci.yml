@@ -1,0 +1,19 @@
+name: Call Another GitHub Action
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  call-action:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Call External GitHub Action
+      uses: c15yi/ci-test-1@main
+
+# Notes:
+# - Replace `username/external-action-repo@v1` with the actual repository and version of the GitHub Action you want to call.
+# - Replace `input_key` and `input_value` with the appropriate inputs required by the external action.
+
