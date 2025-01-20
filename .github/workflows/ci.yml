@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - name: Call External GitHub Action
-      uses: c15yi/ci-test-1@main
+      uses: c15yi/ci-test-provider@main
 
 # Notes:
 # - Replace `username/external-action-repo@v1` with the actual repository and version of the GitHub Action you want to call.
